@@ -1,0 +1,113 @@
+
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<form id="Questionnaire" onsubmit="return validateForm()">
+  <div>
+    <h1>Questionnnaire de culture générale</h1>
+    <h2>Quetion 1</h2>
+    <p>Quel est l'unité de mesure de longueur, Anglo-Saxonne ?</p>
+    <div id="premiereQuestion">
+      <input type="text" name="Q1" id="Q1">
+      <label for="Q1"></label>
+    </div>
+
+    <h2>Question 2</h2>
+    <p>Si une poule pond 6 oeufs par semaine. Combien d'oeuf a-t-on en un mois ?</p>
+    <div>
+      <select id="Q2">
+        <option id="vide" value="0oeufs"></option>
+        <option id="12oeufs" value="12oeufs">12 oeufs</option>
+        <option id="18oeufs" value="18oeufs">18 oeufs</option>
+        <option id="24oeufs" value="24oeufs">24 oeufs</option>
+      </select>
+      <label for="Q2"></label>
+    </div>
+
+    <h2>Question 3</h2>
+    <p>Quelle distance parcours une auto, qui roule à 80 km/h, pendant 30mins ?</p>
+    <div id="Q3">
+      <input type="radio" name="question3" id="15" value="15km">
+      <label for="15" >15km</label>
+      <input type="radio" name="question3" id="30"  value="30km">
+      <label for="30">30km</label>
+      <input type="radio" name="question3" id="40"  value="40km">
+      <label for="40">40km</label>
+      <input type="radio" name="question3" id="aucune"  value="aucune">
+      <label for="aucune">Aucune</label>
+    </div>
+    <div id="Q4">
+      <h2>Question 4</h2>
+      <p>Quelles sont les villes du Québec qui ont entre 200 000 et 500 000 habitants ?</p>
+      <input type="checkbox" id="1" name="Montréal" value="montréal">
+      <label for="1" >Montréal</label>
+      <input type="checkbox" id="2" name="Saguenay" value="Saguenay">
+      <label for="2">Saguenay</label>
+      <input type="checkbox" id="3" name="Gatineau" value="Gatineau">
+      <label for="3">Gatineau</label>
+      <input type="checkbox" id="4" name="Laval" value="Laval">
+      <label for="4">Laval</label>
+      <input type="checkbox" id="5" name="Sherbrooke" value="Sherbrooke">
+      <label for="5">Sherbrooke</label>
+      <input type="checkbox" id="6" name="Terrebonne" value="Terrebonne">
+      <label for="6">Terrebonne</label>
+      <input type="checkbox" id="7" name="Québec" value="Québec">
+      <label for="7">Québec</label>
+      <input type="checkbox" id="8" name="Drummondville" value="Drummondville">
+      <label for="8">Drummondville</label>
+      <input type="checkbox" id="9" name="Longueuil" value="Longueuil">
+      <label for="9">Longueuil</label>
+    </div>
+    <div id="Q5">
+      <h2>Question 5</h2>
+      <p>Dans un paragraphe d'environ 25 mots (entre 50  et 60 caractères),
+        parlez-nous des performances du Canada à la dernière LNH.</p>
+      <input type="text" id="réponseQ5" name="RéponseTexte">
+      <label for="réponseQ5"></label>
+    </div>
+
+    <div class="C&R">
+      <button id="Correction" type="submit">Correction</button>
+      <button onclick="resetForm()" type="reset">Recommencer</button>
+    </div>
+  </div>
+</form>
+<script src="js/app.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
